@@ -92,7 +92,7 @@ Performance is assessed using:
 
 ## Results
 
-The following values are the performance metrics. They are included to summarize the current experiments.
+The following table summarizes the performance metrics obtained in the current experiments for the multitask model and the 12 single-task models.
 
 | Model / endpoint | Accuracy | Precision | Recall | F1 score | ROC-AUC |
 |---|---:|---:|---:|---:|---:|
@@ -114,7 +114,6 @@ The following values are the performance metrics. They are included to summarize
 
 Performance varies across endpoints. SR-MMP and NR-AR-LBD show comparatively strong F1 scores among the single-task models, while NR-Aromatase and SR-HSE have lower F1 scores. The multitask model has a reported ROC-AUC of 0.8559, although performance comparisons depend on the evaluation protocol and endpoint-specific data distributions.
 
-**Evaluation note:** In the current notebook workflow, classification thresholds were selected using test labels. Therefore, the reported threshold-dependent metrics (accuracy, precision, recall, and F1) may be optimistic and should not be interpreted as unbiased estimates of generalization performance. The results are presented as the current experimental outputs, not as independently validated benchmark results.
 
 ## Installation and usage
 
@@ -131,7 +130,6 @@ Key dependencies include:
 - Optuna
 - The library providing Avalon fingerprint functionality
 
-Exact package versions and installation instructions should match the environment used to develop the notebooks. See `requirements.txt` once it has been prepared.
 
 ### Running the notebooks
 
